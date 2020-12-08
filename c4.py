@@ -8,7 +8,7 @@ import requests
 from colorama import Fore
 
 def __wordpress__():
-    os.systeM("clear")
+    os.system("clear")
     try:
         time.sleep(2)
         print(Fore.YELLOW + "Hello . Welcome Back ;)")
