@@ -32,14 +32,14 @@ def __wordpress__():
         if r.status_code == 404 or r.status_code == 500:
 
 
-                print(Fore.RED + "mmm" + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
+                print(Fore.RED + r + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
                 time.sleep(2)
                 sys.exit()
 
         else:
 
                 time.sleep(2)
-                print(Fore.GREEN + "nnn" + Fore.YELLOW + " > " + Fore.GREEN + "Found ;)")
+                print(Fore.GREEN + r + Fore.YELLOW + " > " + Fore.GREEN + "Found ;)")
                 time.sleep(2)
                 sys.exit()
 
