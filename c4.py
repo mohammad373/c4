@@ -29,7 +29,7 @@ def __wordpress__():
         time.sleep(1)
         print(Fore.YELLOW + "\nPleass 5 Sec Latter ...")
         time.sleep(2)
-        r = requests.get("https://" + target + "/wp-content/plugins/")
+        r = requests.get("http://" + target + "/wp-content/plugins/")
         if r.status_code == 404 or r.status_code == 500:
 
 
