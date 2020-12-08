@@ -13,7 +13,7 @@ def __wordpress__():
         time.sleep(2)
         print(Fore.YELLOW + "Hello . Welcome Back ;)")
         time.sleep(2)
-        target = input(Fore.GREEN + "\n[!] ~ enter Your Address Target ==>  ")
+        target = input(Fore.GREEN + "\n[!] ~ Enter Your Address Target ==>  ")
         time.sleep(2)
         if target == "" or None :
             try:
@@ -25,26 +25,24 @@ def __wordpress__():
                 pass
         else:
             pass
-        print(Fore.YELLOW + "\nYour target Is Testing ...")
+        print(Fore.YELLOW + "\nYour Target Is Testing ...")
         time.sleep(1)
         print(Fore.YELLOW + "\nPleass 5 Sec Latter ...")
         r = requests.get("http://" + target + "/wp-content/plugins/")
         if r.status_code == 404 or r.status_code == 500:
-            try:
-                time.sleep(2)
+
+
                 print(Fore.RED + r + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
                 time.sleep(2)
                 sys.exit()
-            except:
-                pass
+
         else:
-            try:
+
                 time.sleep(2)
                 print(Fore.GREEN + r + Fore.YELLOW + " > " + Fore.GREEN + "Found ;)")
                 time.sleep(2)
                 sys.exit()
-            except:
-                pass
+
     except:
         pass
 __wordpress__()
