@@ -28,18 +28,18 @@ def __wordpress__():
         print(Fore.YELLOW + "\nYour Target Is Testing ...")
         time.sleep(1)
         print(Fore.YELLOW + "\nPleass 5 Sec Latter ...")
-        r = requests.get("http://" + target + "/wp-content/plugins/")
+        r = requests.get("https://" + target + "/wp-content/plugins/")
         if r.status_code == 404 or r.status_code == 500:
 
 
-                print(Fore.RED + r + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
+                print(Fore.RED + "mmm" + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
                 time.sleep(2)
                 sys.exit()
 
         else:
 
                 time.sleep(2)
-                print(Fore.GREEN + r + Fore.YELLOW + " > " + Fore.GREEN + "Found ;)")
+                print(Fore.GREEN + "nnn" + Fore.YELLOW + " > " + Fore.GREEN + "Found ;)")
                 time.sleep(2)
                 sys.exit()
 
